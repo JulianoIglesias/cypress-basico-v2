@@ -1,31 +1,46 @@
-# cy-data-test
+# Apresentação
 
-Sample project to demonstrate a `cy.dataTest` Cypress custom command.
+* Trata-se de uma breve apresentação dos comandos básicos do framework Cypress, baseados no curso Básico para Cypress do Professor Walmyr https://github.com/wlsf82
 
-## Pre-requirements
+# Aplicação
 
-It is required to have Node.js and npm installed to run this project.
+A aplicação se chama Central de Atendimento ao Cliente TAT - [**CAC TAT**](https://cac-tat.s3.eu-central-1.amazonaws.com/index.html) - e foi desenvolvida usando HTML, CSS e JavaScript.
 
-> I used versions `v16.13.2` and `8.1.2` of Node.js and npm, respectively. I suggest you use the same or later versions.
+## Funcionalidades da aplicação
 
-## Installation
+A aplicação CAC TAT é um formulário para simular o envio de mensagens à uma central de atendimento ao cliente.
 
-Run `npm install` (or `npm i` for the short version) to install the dev dependencies.
+### Campos obrigatórios
 
-## Tests
+Os seguintes campos são obrigatórios, por padrão:
 
-> **Note:** Before running the tests, make a copy of the `cypress.env.example.json` file as `cypress.env.json`, which in the real world, you would update with valid credentials.
->
-> The `cypress.env.json` file is included on [`.gitignore`](./.gitignore) and you're safe that confidential info won't be versioned.
+- Nome (campo do tipo texto)
+- Sobrenome (campo do tipo texto)
+- Email (campo do tipo email, **com validacão**)
+- Como podemos te ajudar? (campo de área de texto)
 
-Run `npm test` (or `npm t` for the short version) to run the test in headless mode.
+# Pré-requisitos
 
-Or, run `npm run cy:open` to open Cypress in interactive mode.
+Antes de começar, garanta que os seguintes sistemas estejam instalados em seu computador.
 
-## Support this project
+- [git](https://git-scm.com/) 
+- [Node.js](https://nodejs.org/en/) 
+- npm
+- [Google Chrome](https://www.google.com/intl/pt_br/chrome/) 
+- [Visual Studio Code](https://code.visualstudio.com/)
 
-If you want to support this project, leave a ⭐.
 
-___
+> **Obs. 2:** Ao instalar o Node.js o npm é instalado junto.
 
-This project was created with 💚 by [Walmyr] and studied by me!
+> **Obs. 3:** Para verificar as versões do git, Node.js e npm instaladas em seu computador, execute o comando `git --version && node --version && npm --version` no seu terminal de linha de comando.
+
+## Instalação e inicialização do [Cypress](https://cypress.io) 🌲
+
+1. Na raiz do projeto, execute o comando `npm install cypress@9.5.1 --save-dev` (ou `npm i cypress@9.5.1 -D` para a versão curta)
+2. Logo após, execute o comando `npx cypress open` para abrir o Cypress pela primeira vez
+3. Por fim, com o _Test Runner_ aberto, delete os exemplos criados automaticamente, crie um arquivo chamado `CAC-TAT.spec.js` e feche o _Test Runner_.
+
+> **Obs. 2:** Quando inicializado pela primeira vez, o Cypress automaticamente cria o arquivo `cypress.json` e o diretório `cypress/`, com os sub-diretórios `fixtures/`, `integration/`, `plugins/` e `support/`, com seus respetivos arquivos (com exceção dos exemplos, que acabamos de deletar).
+
+# Documentação Oficial
+* https://docs.cypress.io/guides/overview/why-cypress
