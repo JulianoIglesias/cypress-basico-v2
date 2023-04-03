@@ -1,8 +1,8 @@
-#Apresentação
+# Apresentação
 
 * Trata-se de uma breve apresentação dos comandos básicos do framework Cypress, baseados no curso Básico para Cypress do Professor Walmyr https://github.com/wlsf82
 
-#Aplicação
+# Aplicação
 
 A aplicação se chama Central de Atendimento ao Cliente TAT - [**CAC TAT**](https://cac-tat.s3.eu-central-1.amazonaws.com/index.html) - e foi desenvolvida usando HTML, CSS e JavaScript.
 
