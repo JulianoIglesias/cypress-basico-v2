@@ -25,7 +25,7 @@ Antes de começar, garanta que os seguintes sistemas estejam instalados em seu c
 
 - [git](https://git-scm.com/) 
 - [Node.js](https://nodejs.org/en/) 
-- npm (estou usando a versão `8.3.2` 
+- npm
 - [Google Chrome](https://www.google.com/intl/pt_br/chrome/) 
 - [Visual Studio Code](https://code.visualstudio.com/)
 
